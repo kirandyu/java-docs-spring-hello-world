@@ -18,7 +18,12 @@ public class DemoApplication {
 		return "Hello World! Thanks ";
 	}
 	
-	@RequestMapping("/Hi")
+	@RequestMapping("/error")
+	String sayError() {
+		return "Hello World! ";
+	}
+	
+	@RequestMapping("/hi")
 	String sayHi() {
 		return "Hello World! Kiran ";
 	}
